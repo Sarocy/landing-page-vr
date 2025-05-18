@@ -1,6 +1,3 @@
-import video1 from "../assets/video1.mp4";
-import video2 from "../assets/video2.mp4";
-
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
@@ -27,24 +24,16 @@ const HeroSection = () => {
         </a>
       </div>
       <div className="flex mt-10 justify-center">
-        <video
-          autoPlay
-          loop
-          muted
-          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
-        >
-          <source src={video1} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video
-          autoPlay
-          loop
-          muted
-          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
-        >
-          <source src={video2} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <img
+          src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2x1Y29xbjZ3eTF5cnRubnJ6MTV4Z3ZtcXpxbzZiMnQyOWwwZThleSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DduCXvR0xgjgou2E39/giphy.gif"
+          alt="demonstração 1"
+          className="rounded-lg w-[40vw] border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
+        />
+        <img
+          src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDN3Y3E0OWUxd3Z6OW4yNjE3bTMwa3BiY2RuNzJxNm1oZ3Rqb3kyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/059fSnjd5jdbLdNDgC/giphy.gif"
+          alt="demonstração 2"
+          className="rounded-lg w-[40vw] border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
+        />
       </div>
     </div>
   );
